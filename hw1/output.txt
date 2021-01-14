@@ -1,0 +1,34 @@
+GNU gdb (GDB) 7.6
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "sparc-sun-solaris2.11".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /export/home/B711222/hw1/hw1...(no debugging symbols found)...done.
+[?1034h(gdb) b next_r
+Breakpoint 1 at 0x10ab4
+(gdb) r
+Starting program: /export/home/B711222/hw1/hw1 
+[Thread debugging using libthread_db enabled]
+[New Thread 1 (LWP 1)]
+[Switching to Thread 1 (LWP 1)]
+
+Breakpoint 1, 0x00010ab4 in next_r ()
+(gdb) ni
+0x00010ab8 in next_r ()
+(gdb) ni[K[K$o[K[Kp $o0
+$1 = 55
+(gdb) ni
+0x00010844 in _start ()
+(gdb) $o[K[K[[Kp $o0
+$2 = 1
+(gdb) ni
+0x00010848 in _start ()
+(gdb) p $o0
+$3 = 1
+(gdb) ni
+[Inferior 1 (process 21789    ) exited with code 01]
+(gdb) q
