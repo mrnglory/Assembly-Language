@@ -1,7 +1,7 @@
 R = 3
 C = 3
 
-.data
+	.data
 arr:	.word 11, 12, 13
 	.word 21, 22, 23
 	.word 31, 32, 33
